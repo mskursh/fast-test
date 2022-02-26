@@ -37,7 +37,7 @@ const body = document.querySelector('body') as HTMLElement;
 body && fillColor.setValueFor(body, neutralLayer3);
 
 const updateStyleButton = document.getElementById('update-style');
-updateStyleButton?.addEventListener('click', () => {
+updateStyleButton?.addEventListener('click', (): void => {
   const accentPicker = document.getElementById(
     'accent-color'
   ) as HTMLFormElement;
