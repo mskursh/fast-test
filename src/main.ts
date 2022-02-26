@@ -15,6 +15,7 @@ import {
   fluentRadio,
   fluentRadioGroup,
   fluentCheckbox,
+  fluentSwitch,
 } from '@fluentui/web-components';
 import { parseColorHexRGB } from '@microsoft/fast-colors';
 
@@ -25,7 +26,8 @@ provideFluentDesignSystem().register(
   fluentTextField(),
   fluentRadio(),
   fluentRadioGroup(),
-  fluentCheckbox()
+  fluentCheckbox(),
+  fluentSwitch()
 );
 
 const sidebar = document.querySelector('.sidebar') as HTMLElement;
