@@ -1,0 +1,133 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-family: 'Segoe UI Regular';
+}
+
+:not(:defined) {
+  visibility: hidden;
+}
+
+body {
+  background-color: var(--fill-color);
+}
+
+h2 {
+  font-size: var(--type-ramp-plus-5-font-size);
+  line-height: var(--type-ramp-plus-5-line-height);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: var(--type-ramp-base-font-size);
+  color: var(--neutral-foreground-rest);
+}
+
+.icon > path {
+  fill: var(--neutral-foreground-rest);
+}
+
+.bg-container {
+  padding: 2rem 3rem 3rem 6.5rem;
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--fill-color);
+}
+
+.top-bar {
+  min-height: 64px;
+  padding: 1rem 3rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row-reverse;
+  background-color: var(--neutral-layer-1);
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.color-picker > input {
+  background-color: var(--neutral-fill-layer-rest);
+}
+
+.sidebar {
+  position: absolute;
+  height: calc(100vh - 64px);
+  left: 0;
+  top: 64px;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: var(--fill-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+fluent-card {
+  width: 50%;
+  flex: 1;
+  height: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fill-color);
+}
+
+fluent-card > fluent-button {
+  align-self: flex-end;
+}
+
+fluent-switch > span {
+  margin-left: 0.5rem;
+}
+
+.form {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.form-content {
+  width: 80%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.sample-form {
+  display: flex;
+  flex-direction: column;
+}
+
+fluent-text-field {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+form > fluent-checkbox {
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.sample-form > fluent-button {
+  margin-top: 2rem;
+  width: fit-content;
+  align-self: end;
+}
