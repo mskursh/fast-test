@@ -18,7 +18,7 @@
         />
         <p>Base</p>
         <input type="color" name="base-color" id="base-color" value="#ebebeb" />
-        <fluent-button id="update-style"
+        <fluent-button id="reset-style" onClick="window.location.reload();"
           ><svg
             class="icon"
             width="24"
@@ -36,10 +36,15 @@
       </form>
 
       <fluent-switch>
-        <span slot="checked-message">Dark</span>
-        <span slot="unchecked-message">Light</span>
-        <label for="cap-switch">Mode:</label>
+        <!-- <span slot="checked-message">Dark</span>
+        <span slot="unchecked-message">Light</span> -->
+        <label for="cap-switch">Dark:</label>
       </fluent-switch>
+
+      <fluent-slider min="0" max="100" value="0">
+        <fluent-slider-label position="0"> Light </fluent-slider-label>
+        <fluent-slider-label position="100"> Dark </fluent-slider-label>
+      </fluent-slider>
     </div>
     <div class="sidebar">
       <fluent-button appearance="stealth"
