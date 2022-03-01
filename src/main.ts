@@ -41,7 +41,6 @@ const defaultColors = {
 
 const body = document.querySelector('body') as HTMLElement;
 const sidebar = document.querySelector('.sidebar') as HTMLElement;
-const resetStyleButton = document.getElementById('reset-style') as HTMLElement;
 const accentPicker = document.getElementById('accent-color') as HTMLFormElement;
 const basePicker = document.getElementById('base-color') as HTMLFormElement;
 const modeSwitch = document.querySelector('fluent-switch') as HTMLFormElement;
@@ -76,10 +75,10 @@ basePicker.addEventListener('change', (): void => {
 
 modeSwitch.addEventListener('click', (): void => {
   if (modeSwitch.checked) {
-    body && baseLayerLuminance.setValueFor(body, 100);
+    body && baseLayerLuminance.setValueFor(body, StandardLuminance.DarkMode);
     slider.value = 100;
   } else if (!modeSwitch.checked) {
-    body && baseLayerLuminance.setValueFor(body, 0);
+    body && baseLayerLuminance.setValueFor(body, StandardLuminance.LightMode);
     slider.value = 0;
   }
 });
